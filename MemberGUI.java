@@ -35,6 +35,6 @@ public class MemberGUI {
         String password = JOptionPane.showInputDialog("Enter Password:");
         User newUser = new Member(name, email, phone, password);
         newUser.register();
-        UserManager.saveUser(this);
+        UserManager.saveUser(newUser);
     }
 }

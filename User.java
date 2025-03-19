@@ -45,16 +45,7 @@ public class User implements Authentication , Serializable {
         System.out.println("Registration successful! You can now log in.");
         
     }
-     
-    // public String getpassword(){
-    //     return password;
-    // }
-    // public void displayUserDetails() {
-    //     System.out.println("User ID: " +Id);
-    //     System.out.println("Name: " + name);
-    //     System.out.println("Email: " + email);
-    //     System.out.println("Phone Number: " + phoneNumber);
-    // }
+    
     public boolean verifyPassword(String password){
         return this.password.equals(password);
     }
